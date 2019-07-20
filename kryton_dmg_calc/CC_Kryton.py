@@ -14,6 +14,7 @@ aura = 1.1      #Total attack aura bonus applied in percentage: 10%
 t = 1           #Turn counter
 total = 0       #Total damage
 empowered = 1.5 #Empowered bonus: 50%
+geum_m = 2  #Geum's multiplier bonus.
 
 while geum_h > 0:
   print "Turn " + str(t)
@@ -32,7 +33,7 @@ while geum_h > 0:
   print "Neil's HP: " + str(neil)
   print "Geum does " + str(atk) + " damage"
   total = total + atk
-  geum_a = geum_a * 2
+  geum_a = geum_a * geum_m
   print "Kryton does " + str(k_dmg) + " damage"
   geum_h = geum_h - k_dmg
   print "Geum HP: " + str(geum_h)
